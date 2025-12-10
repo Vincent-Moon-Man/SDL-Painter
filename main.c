@@ -39,7 +39,7 @@ int main() {
     float mouseX, mouseY;
 
 
-    bool fill = false;
+    bool fill = true;
     while (!done) {
 
         SDL_Event event;
@@ -50,15 +50,23 @@ int main() {
                 done = true;
             }
             if (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN){
-                fill = true;
-            }
-            else if (event.type == SDL_EVENT_MOUSE_BUTTON_UP){
                 fill = false;
             }
-        }
+            else if (event.type == SDL_EVENT_MOUSE_BUTTON_UP){
+                fill = true;
+            }
 
-        SDL_SetRenderDrawColor(pRenderer, 255,0,0,255);
-        SDL_RenderClear(pRenderer);
+            switch (event.key.key) {
+            case SDLK_C:
+                SDL_SetRenderDrawColor(pRenderer, 0, 0,0,255);
+                SDL_RenderClear(pRenderer);
+                break;
+            case SDLK_DOWN:
+                // Handle down arrow key
+                break;
+            // Add more cases for other keys
+            }
+        }
 
         SDL_SetRenderDrawColor(pRenderer, 0,255,0,255);
         
