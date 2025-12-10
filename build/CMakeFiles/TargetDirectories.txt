@@ -1,3 +1,0 @@
-/home/moonar/Documents/C_Programming/SDL-Painter/build/CMakeFiles/main.dir
-/home/moonar/Documents/C_Programming/SDL-Painter/build/CMakeFiles/edit_cache.dir
-/home/moonar/Documents/C_Programming/SDL-Painter/build/CMakeFiles/rebuild_cache.dir
