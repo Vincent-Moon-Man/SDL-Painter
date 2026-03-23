@@ -38,7 +38,6 @@ int main() {
     }
 
     SDL_Renderer *pRenderer = SDL_CreateRenderer(pWindow, NULL);
-    TTF_Font *font = TTF_OpenFont("", 24);
 
     float mouseX, mouseY;
 
