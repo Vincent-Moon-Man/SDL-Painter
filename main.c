@@ -103,7 +103,7 @@ int main() {
             
             case SDLK_3:
                 r = g = 0;
-                g = 255;
+                b = 255;
                 break;
 
             case SDLK_4:
